@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photoshop Portfolio - Atanas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="photoshop-app">
+        <!-- Top Menu Bar (from better_ui.html) -->
+        <div class="top-menu-bar">
+            <div class="window-controls">
+                <div class="control red"></div>
+                <div class="control yellow"></div>
+                <div class="control green"></div>
+            </div>
+        </div>
+
+        <div class="tool-icons-bar">
+            <div class="tool-icon-group">
+                <span class="icon-separator">|</span><span class="icon"><img src="https://www.svgrepo.com/show/135822/home-icon-silhouette.svg" alt="Home" style="filter: invert(100%) drop-shadow(3px 3px 1.5px rgba(0, 0, 0, 0.7)); width: 24px; height: 24px;"></span><span class="icon-separator">|</span><span class="icon"><img src="https://www.svgrepo.com/show/485640/brush.svg" alt="Brush" style="filter: invert(100%) drop-shadow(3px 3px 1.5px rgba(0, 0, 0, 0.7)); width: 24px; height: 24px;"></span><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" style="width: 24px; height: 24px;"><path d="M7 10l5 5 5-5z"/></svg></span><span class="icon-separator">|</span><span class="icon"><div style="display: flex; flex-direction: column; align-items: center; gap: 2px;"><img src="https://www.svgrepo.com/show/535262/circle.svg" alt="Circle" style="filter: invert(100%) drop-shadow(3px 3px 1.5px rgba(0, 0, 0, 0.7)); width: 18px; height: 18px;"><span style="font-size: 10px;">23</span></div></span><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" style="width: 24px; height: 24px;"><path d="M7 10l5 5 5-5z"/></svg></span><span class="icon"><img src="https://www.svgrepo.com/show/26369/paint-tool.svg" alt="Paint Tool" style="filter: invert(100%) drop-shadow(3px 3px 1.5px rgba(0, 0, 0, 0.7)); width: 24px; height: 24px;"></span><span class="icon-separator">|</span><span class="icon">Mode: <div style="background-color: white; color: black; padding: 2px 5px; border-radius: 3px; display: inline-flex; align-items: center; gap: 5px;">Normal <svg class="dropdown-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" style="width: 16px; height: 16px;"><path d="M7 10l5 5 5-5z"/></svg></div></span><span class="icon-separator">|</span><span class="icon">Opacity: <div style="background-color: white; color: black; padding: 2px 5px; border-radius: 3px; display: inline-flex; align-items: center; gap: 5px;">66% <svg class="dropdown-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" style="width: 16px; height: 16px;"><path d="M7 10l5 5 5-5z"/></svg></div></span><span class="icon-separator">|</span><span class="icon">Flow: <div style="background-color: white; color: black; padding: 2px 5px; border-radius: 3px; display: inline-flex; align-items: center; gap: 5px;">88% <svg class="dropdown-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" style="width: 16px; height: 16px;"><path d="M7 10l5 5 5-5z"/></svg></div></span><span class="icon-separator">|</span><span class="icon">Smoothing: <div style="background-color: white; color: black; padding: 2px 5px; border-radius: 3px; display: inline-flex; align-items: center; gap: 5px;">10% <svg class="dropdown-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" style="width: 16px; height: 16px;"><path d="M7 10l5 5 5-5z"/></svg></div></span><span class="icon-separator">|</span><span class="icon">Angle: <div style="background-color: white; color: black; padding: 2px 5px; border-radius: 3px; display: inline-flex; align-items: center; gap: 5px;">0° <svg class="dropdown-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" style="width: 16px; height: 16px;"><path d="M7 10l5 5 5-5z"/></svg></div></span><span class="icon"><img src="https://www.svgrepo.com/show/383430/angle.svg" alt="Angle" style="filter: invert(100%) drop-shadow(3px 3px 1.5px rgba(0, 0, 0, 0.7)); width: 24px; height: 24px;"></span><span class="icon-separator">|</span><span class="icon"><img src="https://www.svgrepo.com/show/486391/cogwheel-filled.svg" alt="Settings" style="filter: invert(100%) drop-shadow(3px 3px 1.5px rgba(0, 0, 0, 0.7)); width: 24px; height: 24px;"></span><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M7 10l5 5 5-5z"/></svg></span>
+            </div>
+        </div>
+
+        
+
+        <!-- Main Application Body -->
+        <div class="app-body">
+            <!-- Left Toolbar (from better_ui.html) -->
+            <div class="left-toolbar-wrapper">
+                <div class="left-toolbar">
+                    <div class="tool-icon active" title="Move Tool (V)">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2l-2 6-6 2 6 2 2 6 2-6 6-2-6-2z"/>
+                        </svg>
+                    </div>
+                    <div class="tool-icon" title="Rectangular Marquee Tool (M)">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M4 4h16v16H4V4zm2 2v12h12V6H6z"/>
+                        </svg>
+                    </div>
+                    <div class="tool-separator"></div>
+                    <div class="tool-icon" title="Lasso Tool (L)">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M7.5 5.6L5 7l1.4-2.5L5 2l2.5 1.4L10 2 8.6 4.5 10 7 7.5 5.6zm12 9.8L22 14l-1.4 2.5L22 19l-2.5-1.4L17 19l1.4-2.5L17 14l2.5 1.4zM22 2l-2.5 1.4L17 2l1.4 2.5L17 7l2.5-1.4L22 7l-1.4-2.5L22 2zM13.34 12.78l-2.12-2.12L2 19.88V22h2.12l9.22-9.22z"/>
+                        </svg>
+                    </div>
+                    <div class="tool-icon" title="Quick Selection Tool (W)">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M7.5 5.6L10 7 8.6 4.5 10 2 7.5 3.4 5 2l1.4 2.5L5 7l2.5-1.4zm12 9.8L22 14l-1.4 2.5L22 19l-2.5-1.4L17 19l1.4-2.5L17 14l2.5 1.4zM22 2l-2.5 1.4L17 2l1.4 2.5L17 7l2.5-1.4L22 7l-1.4-2.5L22 2z"/>
+                        </svg>
+                    </div>
+                    <div class="tool-separator"></div>
+                    <div class="tool-icon" title="Crop Tool (C)">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M17 15h2V7c0-1.1-.9-2-2-2H9v2h8v8zM7 17V1H5v4H1v2h4v10c0 1.1.9 2 2 2h10v4h2v-4h4v-2H7z"/>
+                        </svg>
+                    </div>
+                    <div class="tool-icon" title="Eyedropper Tool (I)">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.71 5.63l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-3.12 3.12-1.93-1.91-1.41 1.41 1.42 1.42L3 16.25V21h4.75l8.92-8.92 1.42 1.42 1.41-1.41-1.92-1.92 3.12-3.12c.4-.4.4-1.03.01-1.42z"/>
+                        </svg>
+                    </div>
+                    <div class="tool-separator"></div>
+                    <div class="tool-icon" title="Brush Tool (B)">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M7 14c-1.66 0-3 1.34-3 3 0 1.31-1.16 2-2 2 .92 1.22 2.49 2 4 2 2.21 0 4-1.79 4-4 0-1.66-1.34-3-3-3zm13.71-9.37l-1.34-1.34c-.39-.39-1.02-.39-1.41 0L9 12.25 11.75 15l8.96-8.96c.39-.39.39-1.02 0-1.41z"/>
+                        </svg>
+                    </div>
+                    <div class="tool-icon" title="Pencil Tool (B)">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/>
+                        </svg>
+                    </div>
+                    <div class="tool-separator"></div>
+                    <div class="tool-icon" title="Clone Stamp Tool (S)">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M16 12h2c0-2.76-2.24-5-5-5s-5 2.24-5 5 2.24 5 5 5c1.38 0 2.64-.56 3.54-1.46l1.06 1.06c.3.3.78.3 1.08 0s.3-.78 0-1.08l-1.06-1.06C17.44 14.64 18 13.38 18 12c0-2.76-2.24-5-5-5s-5 2.24-5 5h2c0-1.66 1.34-3 3-3s3 1.34 3 3z"/>
+                        </svg>
+                    </div>
+                    <div class="tool-icon" title="History Brush Tool (Y)">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/>
+                        </svg>
+                    </div>
+                    <div class="tool-separator"></div>
+                    <div class="tool-icon" title="Eraser Tool (E)">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M15.14 3c-.51 0-1.02.2-1.41.59L2.59 14.73c-.78.78-.78 2.05 0 2.83L5.03 20H7v-2h5v2h8v-4.59l-4.86-4.86L20.59 5.1c.78-.78.78-2.05 0-2.83l-1.45-1.45c-.39-.39-.9-.59-1.41-.59s-1.02.2-1.41.59l-3.18 3.18zm-1.41 3L17 9.27 14.27 12 11 8.73 13.73 6z"/>
+                        </svg>
+                    </div>
+                    <div class="tool-icon" title="Gradient Tool (G)">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M11 9h2v2h-2zm-2 2h2v2H9zm4 0h2v2h-2zm2-2h2v2h-2zM7 9h2v2H7zm12-6H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 18H7v-2h2v2zm4 0h-2v-2h2v2zm4 0h-2v-2h2v2zm2-7h-2v2h2v2h-2v-2h-2v2h-2v-2h-2v2H9v-2H7v2H5v-2h2v-2H5V5h14v6z"/>
+                        </svg>
+                    </div>
+                    <div class="tool-separator"></div>
+                    <div class="tool-icon" title="Type Tool (T)">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M5 4v3h5.5v12h3V7H19V4z"/>
+                        </svg>
+                    </div>
+                    <div class="tool-icon" title="Path Selection Tool (A)">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11z"/>
+                        </svg>
+                    </div>
+                    <div class="tool-separator"></div>
+                    <div class="tool-icon" title="Rectangle Tool (U)">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <rect x="3" y="3" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <div class="tool-icon" title="Pen Tool (P)">
+                        <img src="https://www.svgrepo.com/show/471753/pen-tool-02.svg" alt="Pen Tool" style="filter: invert(100%) drop-shadow(3px 3px 1.5px rgba(0, 0, 0, 0.7)); width: 30px; height: 30px;">
+                    </div>
+                    <div class="tool-separator"></div>
+                    <div class="tool-icon" title="Hand Tool (H)">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"/>
+                        </svg>
+                    </div>
+                    <div class="tool-icon" title="Zoom Tool (Z)">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Content Area -->
+            <div class="main-content-area">
+                <!-- Rulers (from index.html) -->
+                <div class="ruler-container-top">
+                    <div class="ruler-origin"></div>
+                    <div class="ruler-horizontal"></div>
+                </div>
+                <div class="ruler-and-workspace">
+                    <div class="ruler-vertical"></div>
+                    <div class="workspace-wrapper">
+                        <div class="workspace">
+                            <!-- New Document Window (from index.html) -->
+                            <div class="photoshop-interface">
+                                <div class="top-bar">
+                                    <div class="window-controls">
+                                        <div class="control red"></div>
+                                        <div class="control yellow"></div>
+                                        <div class="control green"></div>
+                                    </div>
+                                    <div class="app-title">Mihaela Vitanova's CV</div>
+                                </div>
+                                <div class="tab-navigation">
+                                    <div class="tab" data-category="about">About Me</div>
+                                    <div class="tab active" data-category="all">All</div>
+                                    <div class="tab" data-category="branding">Branding</div>
+                                    <div class="tab" data-category="web">Web</div>
+                                    <div class="tab" data-category="poster">Poster</div>
+                                    <div class="tab" data-category="art">Art</div>
+                                    <div class="tab" data-category="film">Film</div>
+                                    <div class="tab" data-category="photo">Photo</div>
+                                </div>
+                                <div class="main-content">
+                                    <div class="left-panel">
+                                        <div id="project-grid-container" class="project-grid"></div>
+                                        <div id="about-section-container" class="about-section" style="display: none;"></div>
+                                    </div>
+                                    <div class="right-panel">
+                                        <div id="project-details-container" class="project-details"></div>
+                                        <div id="about-details-container" class="about-details" style="display: none;"></div>
+                                    </div>
+                                </div>
+                                <div class="footer-bar">
+                                    <div class="footer-left search-container">
+                                        <div class="search-wrapper">
+                                            <input type="text" id="project-search" placeholder="Search projects...">
+                                            <span class="search-icon"></span>
+                                        </div>
+                                    </div>
+                                    <div class="footer-right">
+                                        <button class="btn contact-btn">Contact Me</button>
+                                        <button class="btn close-btn">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bottom-status-bar">
+                            <div class="zoom-level">100%</div>
+                            <div class="active-tool-display">Move Tool (V)</div>
+                            <div class="doc-info">Doc: 24.5M / 128.0M</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Panels (from index.html) -->
+            <div class="right-panels">
+                <div class="panel-group">
+                    <div class="panel-header">
+                        <div class="panel-tabs"><span class="tab active">Color</span><span class="tab">Swatches</span></div>
+                        <div class="panel-menu-icon">≡</div>
+                    </div>
+                    <div class="panel-content color-panel">
+                        <div class="color-picker-wrapper">
+                            <div class="color-preview">
+                                <div class="foreground-color"></div>
+                                <div class="background-color"></div>
+                            </div>
+                            <div class="color-sliders">
+                                <div class="color-field"></div>
+                                <div class="hue-slider"></div>
+                            </div>
+                        </div>
+                        <div class="color-inputs">
+                            <div class="input-group"><span>H</span><input type="text" value="0°"></div>
+                            <div class="input-group"><span>S</span><input type="text" value="0%"></div>
+                            <div class="input-group"><span>B</span><input type="text" value="0%"></div>
+                        </div>
+                        <div class="color-inputs">
+                            <div class="input-group"><span>R</span><input type="text" value="0"></div>
+                            <div class="input-group"><span>G</span><input type="text" value="0"></div>
+                            <div class="input-group"><span>B</span><input type="text" value="0"></div>
+                        </div>
+                        <div class="hex-input">
+                            <div class="input-group"><span>#</span><input type="text" value="000000"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-group layers-panel-group">
+                    <div class="panel-header">
+                        <div class="panel-tabs"><span class="tab active">Layers</span><span class="tab">Channels</span><span class="tab">Paths</span></div>
+                        <div class="panel-menu-icon">≡</div>
+                    </div>
+                    <div class="layers-controls">
+                        <select class="blend-mode"><option>Normal</option></select>
+                        <div class="opacity-group">
+                            <label>Opacity:</label>
+                            <input type="text" class="opacity-input" value="100%">
+                        </div>
+                        <div class="lock-icons">
+                            <span title="Lock transparent pixels">🔒</span>
+                            <span title="Lock image pixels">🖌️</span>
+                            <span title="Lock position">📍</span>
+                            <span title="Lock all">🔒</span>
+                        </div>
+                    </div>
+                    <div class="panel-content layers-list">
+                        <div class="layer-item">
+                            <img class="visibility-toggle" src="https://www.svgrepo.com/show/525334/eye.svg" data-open-eye="https://www.svgrepo.com/show/525334/eye.svg" data-closed-eye="https://www.svgrepo.com/show/525332/eye-closed.svg" alt="Toggle Visibility">
+                            <div class="layer-thumbnail"></div>
+                            <span class="layer-name">Header Text</span>
+                        </div>
+                        <div class="layer-item">
+                            <img class="visibility-toggle" src="https://www.svgrepo.com/show/525334/eye.svg" data-open-eye="https://www.svgrepo.com/show/525334/eye.svg" data-closed-eye="https://www.svgrepo.com/show/525332/eye-closed.svg" alt="Toggle Visibility">
+                            <div class="layer-thumbnail"></div>
+                            <span class="layer-name">Logo Image</span>
+                        </div>
+                        <div class="layer-item active">
+                            <img class="visibility-toggle" src="https://www.svgrepo.com/show/525334/eye.svg" data-open-eye="https://www.svgrepo.com/show/525334/eye.svg" data-closed-eye="https://www.svgrepo.com/show/525332/eye-closed.svg" alt="Toggle Visibility">
+                            <div class="layer-thumbnail"></div>
+                            <span class="layer-name">Main Content Group</span>
+                        </div>
+                        <div class="layer-item">
+                            <img class="visibility-toggle" src="https://www.svgrepo.com/show/525334/eye.svg" data-open-eye="https://www.svgrepo.com/show/525334/eye.svg" data-closed-eye="https://www.svgrepo.com/show/525332/eye-closed.svg" alt="Toggle Visibility">
+                            <div class="layer-thumbnail"></div>
+                            <span class="layer-name">Footer Elements</span>
+                        </div>
+                        <div class="layer-item">
+                            <img class="visibility-toggle" src="https://www.svgrepo.com/show/525334/eye.svg" data-open-eye="https://www.svgrepo.com/show/525334/eye.svg" data-closed-eye="https://www.svgrepo.com/show/525332/eye-closed.svg" alt="Toggle Visibility">
+                            <div class="layer-thumbnail"></div>
+                            <span class="layer-name">Buttons</span>
+                        </div>
+                        <div class="layer-item">
+                            <img class="visibility-toggle" src="https://www.svgrepo.com/show/525334/eye.svg" data-open-eye="https://www.svgrepo.com/show/525334/eye.svg" data-closed-eye="https://www.svgrepo.com/show/525332/eye-closed.svg" alt="Toggle Visibility">
+                            <div class="layer-thumbnail"></div>
+                            <span class="layer-name">Background Image</span>
+                        </div>
+                        <div class="layer-item">
+                            <img class="visibility-toggle" src="https://www.svgrepo.com/show/525334/eye.svg" data-open-eye="https://www.svgrepo.com/show/525334/eye.svg" data-closed-eye="https://www.svgrepo.com/show/525332/eye-closed.svg" alt="Toggle Visibility">
+                            <div class="layer-thumbnail"></div>
+                            <span class="layer-name">Background Color</span>
+                        </div>
+                    </div>
+                    <div class="layers-footer">
+                        <span title="Link layers">🔗</span>
+                        <span title="Add layer style">fx</span>
+                        <span title="Add layer mask">[▭]</span>
+                        <span title="New fill or adjustment layer">◐</span>
+                        <span title="New group">📁</span>
+                        <span title="New layer">📄</span>
+                        <span title="Delete layer">🗑️</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project Modal -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-top-bar">
+                <span class="modal-file-info"></span>
+                <span class="close-button"><div class="close-icon"></div></span>
+            </div>
+            <div class="modal-image-display-area">
+                <img id="modal-image" src="" alt="Project Full Design">
+            </div>
+            <div class="modal-bottom-bar">
+                <span class="modal-resolution-info"></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Me Modal -->
+    <div id="contact-modal" class="modal">
+        <div class="modal-content contact-modal-content">
+            <div class="modal-top-bar">
+                <span class="modal-title">Contact Me</span>
+                <span class="close-button"><div class="close-icon"></div></span>
+            </div>
+            <div class="modal-body">
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                    </div>
+                    <button type="submit" class="btn send-btn">Send Message</button>
+                </form>
+                <div id="success-message" style="display: none;">
+                    <h3>Thank you!</h3>
+                    <p>Your message has been sent successfully.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="projects.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

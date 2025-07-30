@@ -1,17 +1,16 @@
 const projects = [
     {
         id: 1,
-        title: "Modern Art Gallery",
+        title: "Gastropub Lamyata",
         category: "branding",
-        thumbnail: "https://i.imgur.com/ScUVs1L.png",
-        fullImage: "https://i.imgur.com/ScUVs1L.png",
+        thumbnail: "./pictures/lamyata-thumbnail.jpg",
+        fullImage: "./pictures/lamyata-full.jpg",
         resolutionPx: "1920x1080px",
         resolutionPpi: "72ppi",
         fileName: "art_gallery_promo.psd",
         fileSize: "15.2MB",
         fullDescription: "A complete branding package for a contemporary art gallery. The design focuses on a minimalist aesthetic to let the artwork shine. This project involved creating a logo, business cards, and promotional posters.",
         technologies: ["Photoshop", "Illustrator"],
-        link: "https://www.behance.net/gallery/123456789/Modern-Art-Gallery-Branding"
     },
     {
         id: 2,

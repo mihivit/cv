@@ -123,7 +123,6 @@ document.addEventListener('DOMContentLoaded', () => {
             hexInput.value = rgbToHex(r, g, b);
         }
 
-        foregroundColorSwatch.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
         colorField.style.background = `linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0)), linear-gradient(to right, rgba(255,255,255,1), hsl(${currentHue}, 100%, 50%))`;
         hueSliderThumb.style.left = `${(currentHue / 360) * 100}%`;
         
@@ -148,6 +147,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
         contactButton.style.background = `rgb(${r}, ${g}, ${b})`;
 
+        const sendButton = document.querySelector('.send-btn');
+        if (sendButton) {
+            sendButton.style.background = `rgb(${r}, ${g}, ${b})`;
+        }
+
         // Update selected tool icon color
         const activeToolIcon = document.querySelector('.tool-icon.active');
         if (activeToolIcon) {
@@ -171,6 +175,11 @@ document.addEventListener('DOMContentLoaded', () => {
         dropdownArrows.forEach(arrow => {
             arrow.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
         });
+
+        // Dispatch custom event with current RGB color
+        document.dispatchEvent(new CustomEvent('colorUpdated', {
+            detail: { r, g, b }
+        }));
     }
 
     function handleHsbInputChange() {
@@ -464,6 +473,43 @@ document.addEventListener('DOMContentLoaded', () => {
             icon.classList.add('active');
             activeToolDisplay.textContent = icon.title; // Update active tool display
             updateColorDisplay(); // Apply current color to new active icon
+
+            const svgElement = icon.querySelector('svg');
+            if (svgElement) {
+                const clonedSvg = svgElement.cloneNode(true);
+                clonedSvg.setAttribute('width', '32');
+                clonedSvg.setAttribute('height', '32');
+
+                // Set the fill of all path/rect elements to white
+                clonedSvg.querySelectorAll('path, rect').forEach(el => el.setAttribute('fill', 'white'));
+
+                // Get the current color from the color picker for the glow
+                const { r, g, b } = hsbToRgb(currentHue, currentSaturation, currentBrightness);
+                const glowColor = `rgb(${r},${g},${b})`;
+
+                const originalContent = clonedSvg.innerHTML;
+                const filterId = 'cursor-glow-dynamic';
+
+                const defs = `
+                    <defs>
+                        <filter id="${filterId}" x="-50%" y="-50%" width="200%" height="200%">
+                            <feDropShadow dx="0" dy="0" stdDeviation="4.5" flood-color="${glowColor}" flood-opacity="1" />
+                        </filter>
+                    </defs>
+                `;
+
+                clonedSvg.innerHTML = `${defs}<g filter="url(#${filterId})">${originalContent}</g>`;
+
+                const svgData = new XMLSerializer().serializeToString(clonedSvg);
+                const cursorUrl = `url('data:image/svg+xml;base64,${btoa(svgData)}')`;
+                document.body.style.cursor = `${cursorUrl} 16 16, auto`;
+
+            } else {
+                const imgElement = icon.querySelector('img');
+                if (imgElement) {
+                    document.body.style.cursor = `url('${imgElement.src}') 16 16, auto`;
+                }
+            }
         });
     });
 
@@ -530,7 +576,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- INITIALIZATION ---
     generateRulers();
-    renderProjects('all');
+    renderAboutMe();
 
     // Set initial color for the foreground swatch, active tab, and create button
     currentHue = 174; // Turquoise hue

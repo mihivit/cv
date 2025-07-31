@@ -2,7 +2,7 @@ const projects = [
     {
         id: 1,
         title: "Gastropub “Lamyata”",
-        category: "branding",
+        category: "Branding",
         thumbnail: "./pictures/lamyata-thumbnail.jpg",
         fullImage: "./pictures/lamyata-full.jpg",
         resolutionPx: "7633x2186px",
@@ -17,7 +17,7 @@ const projects = [
     {
         id: 2,
         title: "Beer brand “Peak”",
-        category: "branding",
+        category: "Branding",
         thumbnail: "./pictures/vruh-thumbnail.jpg",
         fullImage: "./pictures/vruh-full.jpg",
         resolutionPx: "4460x2186px",
@@ -33,7 +33,7 @@ const projects = [
     {
         id: 3,
         title: "Wine brand “Il Diavolo”",
-        category: "branding",
+        category: "Branding",
         thumbnail: "./pictures/diavolo-thumbnail.jpg",
         fullImage: "./pictures/diavolo-full.jpg",
         resolutionPx: "4763x2186px",
@@ -43,6 +43,22 @@ const projects = [
         overview: "il Diavolo is a bold and dramatic brand identity concept for a premium wine label and lifestyle product line. Rooted in a powerful mythological narrative and striking visual impact, the brand embodies intensity, temptation, and a rebellious sophistication. This project creates a cohesive identity system that appeals to thrill-seekers, design aficionados, and connoisseurs looking for more than just a drink—an experience.",
         conceptVisualLanguage: "The visual concept draws inspiration from infernal mythology and vintage ink illustration. A muscular devil figure holding a trident becomes the core brand character, illustrated in a fine, hand-drawn style with a modern twist. The logo features an expressive handwritten script for “Diavolo” with aggressive brushstroke accents and a red slash through the name—symbolizing danger, passion, and high energy. The overall color palette—white, deep black, and bold crimson red—evokes intensity, heat, and elegance. The branding balances traditional textures (grainy, hand-inked) with confident modern typography and layout.",
         deliverablesIncluded: "<ul> <li>Logo & Visual Identity (featuring illustrated devil and custom typography)</li> <li>Custom Wine Bottle Label (2018 Merlot with rich red & gray palette)</li> <li>Branded Stationery (letterhead, business cards, notebook)</li> <li>Merchandise (T-shirt, cap, tote bag, kraft paper gift bag)</li> <li>Slogan and subtitle in Italian—communicating mystique and origin</li> </ul>",
+        technologies: ["Photoshop", "Illustrator"],
+        link: ""
+    },
+    {
+        id: 4,
+        title: "Pizza place “The Spot”",
+        category: "Branding",
+        thumbnail: "./pictures/pizzaspot-thumbnail.jpg",
+        fullImage: "./pictures/pizzaspot-full.jpg",
+        resolutionPx: "4988x2186px",
+        resolutionPpi: "150ppi",
+        fileName: "branding_thepspot.psd",
+        fileSize: "5.2MB",
+        overview: "The Spot is a fast-casual pizza brand that focuses on ultra-quick service (under 2 minutes!) and a fun, interactive customer experience. Designed to resonate with a young, dynamic, and social-media-savvy audience, the brand merges speed, flavor, and creativity into a bold visual identity that turns pizza time into playtime. The project creates a cheerful and cohesive brand presence across packaging, print, and marketing touchpoints.",
+        conceptVisualLanguage: "The visual identity is centered around vibrant orange tones and playful, geometric patterns made of pizza slice icons. The logo combines a pizza slice with a map location pin—visually reinforcing the idea that this is the spot for quick, tasty food. The packaging uses game-inspired layouts (spinners, snake laderand ludo) to encourage interaction, humor, and repeat engagement. Typography is casual and energetic, while photography emphasizes hot, delicious slices in a circular “clock” motif to drive home the “ready in under 2 minutes” message. The visual tone is friendly, bold, and geared for high-impact in social environments.",
+        deliverablesIncluded: "<ul> <li>Logo & Visual Identity (pizza/location hybrid mark)</li> <li>Branded Stationery (letterhead, business cards, envelopes, sticker)</li> <li>Custom Pizza Box Designs (game-style graphics for added entertainment)</li> <li>Advertising Posters & Flyers (with bold typography and sliced-pizza visuals)</li> <li>Slogan: “Пицата, която става за по-малко от 2 минути!” (“The pizza that’s ready in under 2 minutes!”)</li> <li>Social Media Handles and Ordering Details integrated into visuals</li> </ul>",
         technologies: ["Photoshop", "Illustrator"],
         link: ""
     },

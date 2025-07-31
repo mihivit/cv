@@ -353,7 +353,9 @@ document.addEventListener('DOMContentLoaded', () => {
         projectDetailsContainer.innerHTML = `
             <h2>${project.title}</h2>
             <p><strong>Category:</strong> ${project.category}</p>
-            <p>${project.fullDescription}</p>
+            ${project.overview ? `<h3>Overview:</h3><p>${project.overview}</p>` : ''}
+            ${project.conceptVisualLanguage ? `<h3>Concept & Visual Identity:</h3><p>${project.conceptVisualLanguage}</p>` : ''}
+            ${project.deliverablesIncluded ? `<h3>Deliverables Included:</h3>${project.deliverablesIncluded}` : ''}
             <p><strong>Technologies:</strong> ${project.technologies.join(', ')}</p>
             ${project.link ? `<a href="${project.link}" target="_blank">View Project</a>` : ''}
         `;

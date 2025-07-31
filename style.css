@@ -989,6 +989,27 @@ body {
     color: var(--ps-text);
 }
 
+.project-details h3 {
+    font-size: 1.6rem;
+    color: var(--ps-text-light);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    border-bottom: 0.1rem solid var(--ps-border);
+    padding-bottom: 0.5rem;
+}
+
+.project-details ul {
+    padding-left: 2rem;
+    margin-bottom: 1.2rem;
+}
+
+.project-details ul li {
+    font-size: 1.4rem;
+    line-height: 1.8;
+    color: var(--ps-text);
+    margin-bottom: 0.5rem;
+}
+
 .project-details strong {
     color: var(--ps-text-light);
 }

@@ -16,7 +16,7 @@ const projects = [
     },
     {
         id: 2,
-        title: "Beer brand “Peak”",
+        title: "Beer Brand “Peak”",
         category: "Branding",
         thumbnail: "./pictures/vruh-thumbnail.jpg",
         fullImage: "./pictures/vruh-full.jpg",
@@ -32,7 +32,7 @@ const projects = [
     },
     {
         id: 3,
-        title: "Wine brand “Il Diavolo”",
+        title: "Wine Brand “Il Diavolo”",
         category: "Branding",
         thumbnail: "./pictures/diavolo-thumbnail.jpg",
         fullImage: "./pictures/diavolo-full.jpg",
@@ -48,7 +48,7 @@ const projects = [
     },
     {
         id: 4,
-        title: "Pizza place “The Spot”",
+        title: "Pizza Place “The Spot”",
         category: "Branding",
         thumbnail: "./pictures/pizzaspot-thumbnail.jpg",
         fullImage: "./pictures/pizzaspot-full.jpg",
@@ -59,6 +59,22 @@ const projects = [
         overview: "The Spot is a fast-casual pizza brand that focuses on ultra-quick service (under 2 minutes!) and a fun, interactive customer experience. Designed to resonate with a young, dynamic, and social-media-savvy audience, the brand merges speed, flavor, and creativity into a bold visual identity that turns pizza time into playtime. The project creates a cheerful and cohesive brand presence across packaging, print, and marketing touchpoints.",
         conceptVisualLanguage: "The visual identity is centered around vibrant orange tones and playful, geometric patterns made of pizza slice icons. The logo combines a pizza slice with a map location pin—visually reinforcing the idea that this is the spot for quick, tasty food. The packaging uses game-inspired layouts (spinners, snake laderand ludo) to encourage interaction, humor, and repeat engagement. Typography is casual and energetic, while photography emphasizes hot, delicious slices in a circular “clock” motif to drive home the “ready in under 2 minutes” message. The visual tone is friendly, bold, and geared for high-impact in social environments.",
         deliverablesIncluded: "<ul> <li>Logo & Visual Identity (pizza/location hybrid mark)</li> <li>Branded Stationery (letterhead, business cards, envelopes, sticker)</li> <li>Custom Pizza Box Designs (game-style graphics for added entertainment)</li> <li>Advertising Posters & Flyers (with bold typography and sliced-pizza visuals)</li> <li>Slogan: “Пицата, която става за по-малко от 2 минути!” (“The pizza that’s ready in under 2 minutes!”)</li> <li>Social Media Handles and Ordering Details integrated into visuals</li> </ul>",
+        technologies: ["Photoshop", "Illustrator"],
+        link: ""
+    },
+    {
+        id: 5,
+        title: "CBD Brand “ERRA”",
+        category: "Branding",
+        thumbnail: "./pictures/erra-thumbnail.jpg",
+        fullImage: "./pictures/erra-full.jpg",
+        resolutionPx: "4203x2186px",
+        resolutionPpi: "150ppi",
+        fileName: "branding_erra.psd",
+        fileSize: "5.2MB",
+        overview: "Erra is a futuristic wellness and lifestyle brand that merges bold visual storytelling with the benefits of CBD and cannabis-derived products. Designed for a modern, edgy, and experience-driven audience, Erra infuses mystique, energy, and subcultural aesthetics into every product touchpoint. From CBD-infused drinks to curated hemp blends, the brand invites users to explore altered states of mind, focus, or relaxation—each product crafted with purpose, style, and attitude. The experience is not just therapeutic—it’s immersive, stylish, and unforgettable.",
+        conceptVisualLanguage: "Erra’s visual identity leans into dark, smoky gradients illuminated by neon outlines and elemental icons. A unified system of bright, glowing colors distinguishes each product line—red for passion, yellow for energy, blue for mind-altering effects, and green for natural calm. Each product pouch and can is marked with glyph-like illustrations (skull, tree, heart, lightning bolt) to quickly communicate effect and vibe. Typography is sharp, modern, and futuristic, while packaging design incorporates cannabinoid breakdowns, effect icons, and interactive visual systems to create a ritualistic, collectible appeal. The tone is mysterious, loud, and designed for high impact in digital and retail spaces.",
+        deliverablesIncluded: "<ul> <li>Logo & Visual Identity (cannabis + elemental mark system)</li> <li>CBD Beverage Cans (color-coded, 350ml, 25mg CBD each)</li> <li>CBD Hemp Oil Bottle (tinted dropper, clean labeling)</li> <li>Interactive Product Pouches (icon-based, effect-driven design with cannabinoid metrics)</li> <li>Custom Collector Box (magnet-lid, smoky interior, bold print)</li> <li>Website Link Integration & Digital-First Packaging (social-optimized visuals)</li> <li>Tagline / Vibe: “Beyond Calm. Beyond High. This is Erra.”</li> </ul>",
         technologies: ["Photoshop", "Illustrator"],
         link: ""
     },

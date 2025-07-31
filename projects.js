@@ -92,6 +92,7 @@ const projects = [
         conceptVisualLanguage: "The core concept is built around the motif of mountain exploration and Bulgarian natural landscapes, interpreted through a contemporary design lens. The custom logotype "ВРЪХ" is stark and geometric, evoking stamped labels or alpine signage. A consistent mountain-scape illustration runs through all product variants, creating visual continuity across STOUT, CRAFT, and LAGER styles. The use of black, white, and muted natural tones—punctuated by bold accent colors (green, teal, amber)—represents the raw purity of ingredients and the elevation experience. The packaging and visuals exude calm strength, wild purity, and clean design, reflecting both the environment and product quality.",
         deliverablesIncluded: "<ul> <li>Logo & Visual Identity (featuring stylized “ВРЪХ” logotype)</li> <li>Custom Beer Bottle Labels (STOUT, CRAFT, LAGER—each with a unique accent color)</li> <li>Merchandise (T-shirts, pens, USB flash drive)</li> <li>Branded Stationery (letterhead, envelopes, business cards)</li> <li>Branded Takeaway Bag with mountain-pattern repeat</li> <li>Slogan: “Върховното изживяване!” ("The ultimate experience!")</li> </ul>",
         technologies: ["Photoshop", "Illustrator"],
+        link: 
     },
     {
         id: 8,

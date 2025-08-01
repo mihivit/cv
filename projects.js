@@ -78,4 +78,20 @@ const projects = [
         technologies: ["Photoshop", "Illustrator"],
         link: ""
     },
+    {
+        id: 6,
+        title: "Eco Clothing Brand “GrowGreen”",
+        category: "Branding",
+        thumbnail: "./pictures/growgreen-thumbnail.jpg",
+        fullImage: "./pictures/growgreen-full.jpg",
+        resolutionPx: "2727x2186px",
+        resolutionPpi: "150ppi",
+        fileName: "branding_growgreen.psd",
+        fileSize: "5.2MB",
+        overview: "GrowGreen is an eco-conscious fashion brand that merges sustainability with bold, nature-inspired design. Focused on environmentally friendly materials and packaging, the brand aims to appeal to a new generation of conscious consumers who care about both the planet and personal style. With a vibrant and confident visual identity, GrowGreen positions itself as both ethical and expressive—proving that going green doesn’t mean toning things down.",
+        conceptVisualLanguage: "The visual identity of GrowGreen is driven by biomorphic fingerprint-like patterns that represent individuality, nature, and organic growth. The brand uses a vivid dual-color palette—fresh leafy green and earthy orange—to symbolize harmony between nature and bold self-expression. The wordmark features alternating letter colors to reinforce the fusion of ‘Grow’ and ‘Green’. Packaging is natural and minimal, using kraft paper bags and boxes with printed pattern accents. Apparel and accessories incorporate the graphic system consistently, creating a unified and recognizable brand presence. Typography is clean and slightly playful, maintaining a modern yet grounded tone. The overall aesthetic is earthy, tactile, and unmistakably fresh.",
+        deliverablesIncluded: "<ul> <li>Logo & Visual Identity (typographic wordmark + fingerprint pattern system)</li> <li>Eco Apparel Line (T-shirts with printed yoke patterns and sustainable tags)</li> <li>Branded Stationery (letterhead, business cards, envelopes with graphic accents)</li> <li>Custom Packaging (kraft paper bags, eco boxes, stickers, and tags)</li> <li>Merchandise (embroidered caps, branded accessories)</li> <li>Color System: Green (growth, nature), Orange (energy, creativity)</li> <li>Slogan / Tone: 'Wear your roots. Grow your impact.'</li> </ul>",
+        technologies: ["Photoshop", "Illustrator"],
+        link: ""
+    },
 ];

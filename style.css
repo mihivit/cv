@@ -25,25 +25,26 @@
 
 /* --- Global Resets and Variables --- */
 :root {
-    /* Vibrant Turquoise Theme */
-    --ps-bg-main: #0f1a19;
-    --ps-bg-dark: #08100f;
-    --ps-bg-medium: #122422;
-    --ps-bg-light: #18302d;
-    --ps-bg-lighter: #1f3f3c;
-    --ps-bg-panel: #0f1a19;
-    --ps-border: #0d1f1e;
-    --ps-border-light: #224c48;
-    --ps-text: #bde0dd;
-    --ps-text-light: #e8f5f4;
-    --ps-text-dim: #7c9a97;
-    --ps-blue: #48d1cc;
-    --ps-blue-hover: #79e0db;
-    --ps-blue-light: #a0eae6;
-    --ps-accent: #ff6b6b;
-    --ps-accent-hover: #ff8585;
-    --ps-gradient-start: #48d1cc;
-    --ps-gradient-end: #20b2aa;
+    /* Vibrant Turquoise Theme *
+    /* Cosmic Nebula Theme */
+--ps-bg-main: #100f1c;
+--ps-bg-dark: #0a0911;
+--ps-bg-medium: #19172b;
+--ps-bg-light: #211f38;
+--ps-bg-lighter: #2b2848;
+--ps-bg-panel: #100f1c;
+--ps-border: #1f1d33;
+--ps-border-light: #342f55;
+--ps-text: #d9d7f1;        /* Light lavender-white */
+--ps-text-light: #f2f0ff;   /* Brighter white */
+--ps-text-dim: #8b89a1;      /* Muted lavender-gray */
+--ps-blue: #a779e9;         /* Main Purple (was blue) */
+--ps-blue-hover: #c09efc;
+--ps-blue-light: #d8c3fe;
+--ps-accent: #f72585;       /* Bright Magenta/Pink */
+--ps-accent-hover: #fa53a0;
+--ps-gradient-start: #a779e9;
+--ps-gradient-end: #8e44ad;
 
     /* Shadows for 3D effect */
     --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -415,8 +416,8 @@ body {
     position: absolute;
     inset: 0;
     background: 
-        repeating-linear-gradient(0deg, transparent, transparent 4rem, rgba(52, 152, 219, 0.05) 4rem, rgba(52, 152, 219, 0.05) 4.1rem),
-        repeating-linear-gradient(90deg, transparent, transparent 4rem, rgba(52, 152, 219, 0.05) 4rem, rgba(52, 152, 219, 0.05) 4.1rem);
+        repeating-linear-gradient(0deg, transparent, transparent 4rem, rgba(240, 165, 50, 0.05) 4rem, rgba(240, 165, 50, 0.05) 4.1rem),
+        repeating-linear-gradient(90deg, transparent, transparent 4rem, rgba(240, 165, 50, 0.05) 4rem, rgba(240, 165, 50, 0.05) 4.1rem);
     pointer-events: none;
 }
 
@@ -483,12 +484,12 @@ body {
 
 .panel-tabs .tab.active {
     color: var(--ps-text-light);
-    background: rgba(52, 152, 219, 0.2);
+    background: rgba(240, 165, 50, 0.2);
 }
 
 .panel-tabs .tab:hover {
     color: var(--ps-text-light);
-    background: rgba(52, 152, 219, 0.1);
+    background: rgba(240, 165, 50, 0.1);
 }
 
 .panel-content {
@@ -614,7 +615,7 @@ body {
 .color-panel input[type="text"]:focus {
     outline: none;
     border-color: var(--ps-blue);
-    box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.2);
+    box-shadow: 0 0 0 0.2rem rgba(240, 165, 50, 0.2);
 }
 
 .color-panel .hex-input input {
@@ -730,7 +731,7 @@ body {
 }
 
 .layers-list .layer-item.active {
-    background: linear-gradient(to right, rgba(52, 152, 219, 0.3), rgba(52, 152, 219, 0.1));
+    background: linear-gradient(to right, rgba(240, 165, 50, 0.3), rgba(240, 165, 50, 0.1));
     border-left: 0.3rem solid var(--ps-blue);
 }
 
@@ -797,7 +798,7 @@ body {
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    box-shadow: var(--shadow-xl), 0 0 5rem rgba(52, 152, 219, 0.1);
+    box-shadow: var(--shadow-xl), 0 0 5rem rgba(240, 165, 50, 0.1);
     position: relative;
 }
 
@@ -871,13 +872,13 @@ body {
 
 .tab-navigation .tab:hover {
     color: var(--ps-text-light);
-    background: rgba(52, 152, 219, 0.1);
+    background: rgba(240, 165, 50, 0.1);
 }
 
 .tab-navigation .tab.active {
     color: var(--ps-blue-light);
     border-bottom-color: var(--ps-blue);
-    background: rgba(52, 152, 219, 0.05);
+    background: rgba(240, 165, 50, 0.05);
 }
 
 .main-content {
@@ -926,7 +927,7 @@ body {
     content: '';
     position: absolute;
     inset: 0;
-    background: linear-gradient(135deg, transparent, rgba(52, 152, 219, 0.1));
+    background: linear-gradient(135deg, transparent, rgba(240, 165, 50, 0.1));
     opacity: 0;
     transition: opacity 0.3s ease;
     pointer-events: none;
@@ -935,7 +936,7 @@ body {
 .project-tile:hover {
     border-color: var(--ps-blue);
     transform: translateY(-0.4rem);
-    box-shadow: var(--shadow-lg), 0 0 2rem rgba(52, 152, 219, 0.2);
+    box-shadow: var(--shadow-lg), 0 0 2rem rgba(240, 165, 50, 0.2);
 }
 
 .project-tile:hover::before {
@@ -944,7 +945,7 @@ body {
 
 .project-tile.selected {
     border-color: var(--ps-blue);
-    box-shadow: var(--shadow-lg), 0 0 3rem rgba(52, 152, 219, 0.4);
+    box-shadow: var(--shadow-lg), 0 0 3rem rgba(240, 165, 50, 0.4);
     transform: translateY(-0.2rem);
 }
 
@@ -1068,7 +1069,7 @@ body {
 #project-search:focus {
     outline: none;
     border-color: var(--ps-blue);
-    box-shadow: var(--shadow-inset), 0 0 0 0.3rem rgba(52, 152, 219, 0.3); /* More prominent glow */
+    box-shadow: var(--shadow-inset), 0 0 0 0.3rem rgba(240, 165, 50, 0.3); /* More prominent glow */
     background-color: var(--ps-bg-medium);
 }
 
@@ -1131,7 +1132,7 @@ body {
     width: 80%;
     max-width: 90rem;
     max-height: 90vh;
-    box-shadow: var(--shadow-xl), 0 0 10rem rgba(52, 152, 219, 0.2);
+    box-shadow: var(--shadow-xl), 0 0 10rem rgba(240, 165, 50, 0.2);
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -1294,7 +1295,7 @@ body {
 #contact-form textarea:focus {
     outline: none;
     border-color: var(--ps-blue);
-    box-shadow: var(--shadow-inset), 0 0 0 0.3rem rgba(52, 152, 219, 0.2);
+    box-shadow: var(--shadow-inset), 0 0 0 0.3rem rgba(240, 165, 50, 0.2);
 }
 
 #contact-form textarea {

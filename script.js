@@ -581,9 +581,9 @@ document.addEventListener('DOMContentLoaded', () => {
     renderAboutMe();
 
     // Set initial color for the foreground swatch, active tab, and create button
-    currentHue = 174; // Turquoise hue
-    currentSaturation = 66; // Turquoise saturation
-    currentBrightness = 82; // Turquoise brightness
+    currentHue = 36; // Orange hue for #F0A532
+    currentSaturation = 79; // Orange saturation for #f0a532
+    currentBrightness = 94; // Orange brightness for #F0A532
     updateColorDisplay();
 
     // Set initial active tool display

@@ -94,4 +94,20 @@ const projects = [
         technologies: ["Photoshop", "Illustrator"],
         link: ""
     },
+    {
+        id: 7,
+        title: "Mobile Banking “Bankr”",
+        category: "Web",
+        thumbnail: "./pictures/bankr-thumbnail.jpg",
+        fullImage: "./pictures/bankr-full.jpg",
+        resolutionPx: "2727x2186px",
+        resolutionPpi: "150ppi",
+        fileName: "branding_bankr.psd",
+        fileSize: "5.2MB",
+        overview: "Bankr is a sleek and modern mobile banking app designed to simplify money management while maintaining a stylish, user-friendly interface. Built for digitally native users, the app combines essential financial tools with a smooth, futuristic design that emphasizes clarity, accessibility, and trust. The project goal is to present banking not just as a service, but as a seamless everyday experience that integrates security, personalization, and smart tracking.",
+        conceptVisualLanguage: "The design centers around a bold green-to-black gradient that communicates both growth and security—two essential pillars of finance. The logotype bankr is modern, minimal, and tech-driven, with a custom logo mark doubling as an arrow, symbolizing progress and financial growth. App screens use clean typography, strong contrast, and data visualization (bar charts, categories, balances) to present complex financial information in a digestible way. The dark UI background creates a premium aesthetic while highlighting the neon-green accents, making the experience both professional and engaging.",
+        deliverablesIncluded: "<ul> <li>Logo & Visual Identity (wordmark with arrow integration)</li> <li>Mobile App UI Design (dashboard, expenses tracker, savings overview)</li> <li>Custom App Icon (for iOS/Android homescreen presence)</li> <li>Marketing Visuals (download campaign graphics, mockups, tagline “The Best Mobile Banking App!”)</li> <li>Interactive Prototypes showcasing navigation and functionality</li> </ul>",
+        technologies: ["Photoshop", "Illustrator", "Figma"],
+        link: ""
+    },
 ];

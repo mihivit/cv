@@ -110,4 +110,20 @@ const projects = [
         technologies: ["Photoshop", "Illustrator", "Figma"],
         link: ""
     },
+    {
+        id: 8,
+        title: "Website For Restaurant “Lamyata”",
+        category: "Web",
+        thumbnail: "./pictures/lamyata-thumbnail.jpg",
+        fullImage: "./pictures/lamyata_web-full.jpg",
+        resolutionPx: "5263x2186px",
+        resolutionPpi: "150ppi",
+        fileName: "web_lamyata.psd",
+        fileSize: "5.2MB",
+        overview: "This website project is designed to inform the viewers about the restaurant's high-quality food, authentic ingredients, and a chef-led dining experience. The website showcases the restaurants both tradition and modernity—highlighting rich culinary culture through strong visuals while providing customers with a seamless way to explore the menu, learn about the brand, and engage with its story. The goal was to create a digital identity that feels both premium and inviting, making the restaurant’s values of quality, passion, and sharing central to the user experience..",
+        conceptVisualLanguage: "The design relies on a bold red-and-white color palette, representing warmth, appetite, and strength, balanced with neutral textures reminiscent of parchment or rustic table settings. Food photography takes center stage, featuring appetizing dishes in clean, circular frames that highlight quality and freshness. The typography is strong and legible, paired with strategic use of red highlights to guide attention to calls-to-action like ordering or exploring the menu. The website layout follows a modular, scroll-friendly design, optimized for both desktop and mobile users. Visual storytelling is enhanced by chef profiles, ingredient showcases, and highlighted brand values such as “Food for Sharing.”",
+        deliverablesIncluded: "<ul> <li>Website Design (multi-page responsive layout: home, menu, about, contact)</li> <li>Custom Menu Sections (meats, pizzas, desserts, drinks)</li> <li>Food Photography Integration (high-quality product shots)</li> <li>Chef & Brand Story Pages (highlighting culinary expertise and sourcing)</li> <li>Responsive Mobile & Tablet Layouts (optimized for ordering on-the-go)</li> <li>Call-to-Action Buttons (order online, learn more)</li> <li>Brand Slogan: *“Храна за споделяне” (“Food for Sharing”)*</li> </ul>",
+        technologies: ["Photoshop", "Illustrator", "Figma"],
+        link: ""
+    },
 ];

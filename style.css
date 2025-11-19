@@ -27,11 +27,11 @@
 :root {
     /* Vibrant Turquoise Theme *
     /* Cosmic Nebula Theme */
---ps-bg-main: #100f1c;
---ps-bg-dark: #0a0911;
---ps-bg-medium: #19172b;
---ps-bg-light: #211f38;
---ps-bg-lighter: #2b2848;
+--ps-bg-main: #252525;
+--ps-bg-dark: #0f0f0f;
+--ps-bg-medium: #272727;
+--ps-bg-light: #353535;
+--ps-bg-lighter: #3f3f3f;
 --ps-bg-panel: #100f1c;
 --ps-border: #1f1d33;
 --ps-border-light: #342f55;

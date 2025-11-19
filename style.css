@@ -38,13 +38,13 @@
 --ps-text: #d9d7f1;        /* Light lavender-white */
 --ps-text-light: #f2f0ff;   /* Brighter white */
 --ps-text-dim: #8b89a1;      /* Muted lavender-gray */
---ps-blue: #a779e9;         /* Main Purple (was blue) */
---ps-blue-hover: #c09efc;
---ps-blue-light: #d8c3fe;
+--ps-blue: #666666;         /* Main Dark Grey (was blue) */
+--ps-blue-hover: #888888;
+--ps-blue-light: #aaaaaa;
 --ps-accent: #f72585;       /* Bright Magenta/Pink */
 --ps-accent-hover: #fa53a0;
---ps-gradient-start: #a779e9;
---ps-gradient-end: #8e44ad;
+--ps-gradient-start: #666666;
+--ps-gradient-end: #444444;
 
     /* Shadows for 3D effect */
     --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.2);
